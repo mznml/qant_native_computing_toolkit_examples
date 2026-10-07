@@ -30,7 +30,7 @@ pytest test_diffusion.py
 # Description
 A denoising diffusion model (DDPM) with 100 steps learns to turn random noise into the pixel art of a given photo.
 The denoising network is a small MLP built from `QLinear` layers (see `qant_layers.py`): it is trained with standard PyTorch
-on the CPU, and in evaluation mode its matrix multiplications run on the NPU during sampling.
+on the CPU, and in evaluation mode its matrix multiplications could run on the NPU (if available) during sampling.
 Its input is the noisy pixel art, a step embedding and the photo (downscaled to 32x32); it predicts the clean pixel art.
 
 ## Dataset
