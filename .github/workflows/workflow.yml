@@ -113,6 +113,15 @@ jobs:
           cd python/parallel_execution
           pip3 install -r requirements.txt
           pytest .
+      - name: diffusion test
+        shell: bash
+        run: |
+          set -e
+          source ~/.bashrc
+          conda activate test_env
+          cd python/diffusion
+          pip3 install -r requirements.txt
+          pytest .
 
       # C examples
       - name: build toolkit library
