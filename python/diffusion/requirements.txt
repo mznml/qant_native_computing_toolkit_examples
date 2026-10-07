@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy
+pillow
+torch==2.11.0
+matplotlib
+ipykernel
+jupyter
+ml_dtypes
+testbook
+pytest
